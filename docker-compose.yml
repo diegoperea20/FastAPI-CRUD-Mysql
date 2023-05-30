@@ -10,7 +10,8 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
     command: uvicorn app:app --host=0.0.0.0 --port=8000
-db:
+
+  db:
     image: mysql:latest
     container_name: mymysql
     environment:
